@@ -1,10 +1,7 @@
 import React from "react";
 import { FiLinkedin, FiGithub } from "react-icons/fi";
 
-import {
-    FooterContainer,
-    FooterText,
-  } from "./styles";
+import { FooterContainer, FooterText } from "./styles";
 
 const Footer = () => {
   return (
@@ -26,6 +23,6 @@ const Footer = () => {
       </a>
     </FooterContainer>
   );
-}
+};
 
 export default Footer;

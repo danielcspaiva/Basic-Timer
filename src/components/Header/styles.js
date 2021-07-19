@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderContainer = styled.footer`
   height: 7%;
@@ -11,5 +11,5 @@ export const HeaderContainer = styled.footer`
 export const HeaderText = styled.p`
   font-size: 3.5vh;
   font-weight: bold;
-  color: #3D2992;
+  color: #3d2992;
 `;

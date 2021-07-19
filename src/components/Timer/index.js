@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
 
 import {
-  CircularProgressCircle,
+  TimerContainer,
   Segment1,
   Segment2,
   Segment3,
   Segment4,
-  CircularProgressBG,
+  CircularProgress,
   Time,
   Label,
 } from "./styles";
@@ -66,17 +66,17 @@ const Timer = () => {
   };
 
   return (
-    <CircularProgressCircle>
-      <CircularProgressBG onClick={timerOver ? resetTimer : playPause}>
+    <TimerContainer>
+      <CircularProgress onClick={timerOver ? resetTimer : playPause}>
         <Time timerOver={timerOver}>{formatTime(currentTime)}</Time>
         <Label>{timerOver ? "Reset" : isRunning ? "Pause" : "Start"}</Label>
-      </CircularProgressBG>
+      </CircularProgress>
       <Segment1 completed={completed} />
       <Segment2 completed={completed} />
       <Segment3 completed={completed} />
       <Segment4 completed={completed} />
-    </CircularProgressCircle>
+    </TimerContainer>
   );
-}
+};
 
 export default Timer;

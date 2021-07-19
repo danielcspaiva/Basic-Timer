@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   height: 7%;
@@ -14,5 +14,5 @@ export const FooterContainer = styled.footer`
 export const FooterText = styled.p`
   font-size: 1.6vh;
   font-weight: bold;
-  color: #3D2992;
+  color: #3d2992;
 `;
